@@ -1,0 +1,1695 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "物流管理系统api文档",
+    "description": "对物流管理系统接口进行测试",
+    "contact": {
+      "name": "knife",
+      "url": "https://knife.blog.csdn.net/",
+      "email": "1448527427@qq.com"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8081",
+      "description": "Inferred Url"
+    }
+  ],
+  "tags": [
+    {
+      "name": "员工管理",
+      "description": "Staff Controller"
+    },
+    {
+      "name": "已完成订单管理",
+      "description": "Sign Controller"
+    },
+    {
+      "name": "揽收和签收管理",
+      "description": "Manage Controller"
+    },
+    {
+      "name": "用户管理",
+      "description": "User Controller"
+    },
+    {
+      "name": "登陆注册",
+      "description": "Login Controller"
+    },
+    {
+      "name": "订单管理",
+      "description": "Order Controller"
+    },
+    {
+      "name": "货物管理",
+      "description": "Item Controller"
+    }
+  ],
+  "paths": {
+    "/item": {
+      "put": {
+        "tags": [
+          "货物管理"
+        ],
+        "summary": "修改货物信息",
+        "operationId": "updateUsingPUT",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/物品实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "货物管理"
+        ],
+        "summary": "保存货物信息",
+        "operationId": "saveUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/物品实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/item/export": {
+      "get": {
+        "tags": [
+          "货物管理"
+        ],
+        "summary": "导出货物信息",
+        "operationId": "exportUsingGET",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/item/get": {
+      "post": {
+        "tags": [
+          "货物管理"
+        ],
+        "summary": "分页查询货物信息",
+        "operationId": "findPageUsingPOST",
+        "parameters": [
+          {
+            "name": "pageNum",
+            "in": "query",
+            "description": "pageNum",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "pageSize",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "search",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/员工和用户映射实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/item/{id}": {
+      "delete": {
+        "tags": [
+          "货物管理"
+        ],
+        "summary": "删除货物信息",
+        "operationId": "deleteUsingDELETE",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "tags": [
+          "登陆注册"
+        ],
+        "summary": "登录",
+        "operationId": "findUserUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/用户实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/manage/collect": {
+      "post": {
+        "tags": [
+          "揽收和签收管理"
+        ],
+        "summary": "揽收货物",
+        "operationId": "collectUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/manage/sign": {
+      "post": {
+        "tags": [
+          "揽收和签收管理"
+        ],
+        "summary": "签收订单",
+        "operationId": "signUsingPOST",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/签收订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/order": {
+      "put": {
+        "tags": [
+          "订单管理"
+        ],
+        "summary": "修改订单信息",
+        "operationId": "updateUsingPUT_1",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "订单管理"
+        ],
+        "summary": "保存订单信息",
+        "operationId": "saveUsingPOST_1",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/order/export": {
+      "get": {
+        "tags": [
+          "订单管理"
+        ],
+        "summary": "导出订单信息",
+        "operationId": "exportUsingGET_1",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/order/get": {
+      "post": {
+        "tags": [
+          "订单管理"
+        ],
+        "summary": "分页查询订单信息",
+        "operationId": "findPageUsingPOST_1",
+        "parameters": [
+          {
+            "name": "pageNum",
+            "in": "query",
+            "description": "pageNum",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "pageSize",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "search",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/员工和用户映射实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/order/{id}": {
+      "delete": {
+        "tags": [
+          "订单管理"
+        ],
+        "summary": "删除订单信息",
+        "operationId": "deleteUsingDELETE_1",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/sign": {
+      "put": {
+        "tags": [
+          "已完成订单管理"
+        ],
+        "summary": "修改已完成订单信息",
+        "operationId": "updateUsingPUT_2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/签收订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "已完成订单管理"
+        ],
+        "summary": "保存已完成订单信息",
+        "operationId": "saveUsingPOST_2",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/签收订单实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/sign/export": {
+      "get": {
+        "tags": [
+          "已完成订单管理"
+        ],
+        "summary": "导出已完成订单信息",
+        "operationId": "exportUsingGET_2",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/sign/get": {
+      "post": {
+        "tags": [
+          "已完成订单管理"
+        ],
+        "summary": "分页查询已完成订单信息",
+        "operationId": "findPageUsingPOST_2",
+        "parameters": [
+          {
+            "name": "pageNum",
+            "in": "query",
+            "description": "pageNum",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "pageSize",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "search",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/员工和用户映射实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/sign/{id}": {
+      "delete": {
+        "tags": [
+          "已完成订单管理"
+        ],
+        "summary": "删除已完成订单信息",
+        "operationId": "deleteUsingDELETE_2",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/staff": {
+      "get": {
+        "tags": [
+          "员工管理"
+        ],
+        "summary": "分页查询员工信息",
+        "operationId": "findPageUsingGET",
+        "parameters": [
+          {
+            "name": "pageNum",
+            "in": "query",
+            "description": "pageNum",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "pageSize",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "search",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "员工管理"
+        ],
+        "summary": "修改员工信息",
+        "operationId": "updateUsingPUT_3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/员工实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "员工管理"
+        ],
+        "summary": "保存员工",
+        "operationId": "saveUsingPOST_3",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/员工实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/staff/export": {
+      "get": {
+        "tags": [
+          "员工管理"
+        ],
+        "summary": "导出员工信息",
+        "operationId": "exportUsingGET_3",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/staff/{id}": {
+      "delete": {
+        "tags": [
+          "员工管理"
+        ],
+        "summary": "删除员工信息",
+        "operationId": "deleteUsingDELETE_3",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user": {
+      "get": {
+        "tags": [
+          "用户管理"
+        ],
+        "summary": "查询用户",
+        "operationId": "findPageUsingGET_1",
+        "parameters": [
+          {
+            "name": "pageNum",
+            "in": "query",
+            "description": "pageNum",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "pageSize",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "description": "search",
+            "required": false,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "用户管理"
+        ],
+        "summary": "修改用户",
+        "operationId": "updateUsingPUT_4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/用户实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "用户管理"
+        ],
+        "summary": "添加用户",
+        "operationId": "saveUsingPOST_4",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/用户实体类"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/export": {
+      "get": {
+        "tags": [
+          "用户管理"
+        ],
+        "summary": "导出用户信息",
+        "operationId": "exportUsingGET_4",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/user/{id}": {
+      "delete": {
+        "tags": [
+          "用户管理"
+        ],
+        "summary": "删除用户",
+        "operationId": "deleteUsingDELETE_4",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/Result«object»"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Result«object»": {
+        "title": "Result«object»",
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          },
+          "msg": {
+            "type": "string"
+          }
+        }
+      },
+      "员工和用户映射实体类": {
+        "title": "员工和用户映射实体类",
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "地址"
+          },
+          "email": {
+            "type": "string",
+            "description": "电子邮件"
+          },
+          "employeeAddress": {
+            "type": "string",
+            "description": "员工地址"
+          },
+          "employeeId": {
+            "type": "integer",
+            "description": "员工ID",
+            "format": "int64"
+          },
+          "employeeIdCard": {
+            "type": "string",
+            "description": "员工身份证号码"
+          },
+          "employeeName": {
+            "type": "string",
+            "description": "员工姓名"
+          },
+          "employeePassword": {
+            "type": "string",
+            "description": "员工密码"
+          },
+          "employeePhone": {
+            "type": "string",
+            "description": "员工电话号码"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "全名"
+          },
+          "menu": {
+            "type": "array",
+            "description": "菜单",
+            "items": {
+              "$ref": "#/components/schemas/菜单实体类"
+            }
+          },
+          "password": {
+            "type": "string",
+            "description": "密码"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "description": "电话号码"
+          },
+          "role": {
+            "type": "integer",
+            "description": "角色",
+            "format": "int32"
+          },
+          "sex": {
+            "type": "string",
+            "description": "性别"
+          },
+          "token": {
+            "type": "string",
+            "description": "访问令牌"
+          },
+          "userId": {
+            "type": "integer",
+            "description": "用户ID",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "description": "用户名"
+          }
+        }
+      },
+      "员工实体类": {
+        "title": "员工实体类",
+        "type": "object",
+        "properties": {
+          "employeeAddress": {
+            "type": "string",
+            "description": "员工地址"
+          },
+          "employeeId": {
+            "type": "integer",
+            "description": "员工ID",
+            "format": "int64"
+          },
+          "employeeIdCard": {
+            "type": "string",
+            "description": "员工身份证号码"
+          },
+          "employeeName": {
+            "type": "string",
+            "description": "员工姓名"
+          },
+          "employeePassword": {
+            "type": "string",
+            "description": "员工密码"
+          },
+          "employeePhone": {
+            "type": "string",
+            "description": "员工电话号码"
+          },
+          "role": {
+            "type": "integer",
+            "description": "角色",
+            "format": "int32"
+          },
+          "token": {
+            "type": "string",
+            "description": "访问令牌"
+          }
+        }
+      },
+      "物品实体类": {
+        "title": "物品实体类",
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "日期",
+            "format": "date-time"
+          },
+          "id": {
+            "type": "integer",
+            "description": "ID",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "名称"
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "数量",
+            "format": "int32"
+          },
+          "recipient": {
+            "type": "string",
+            "description": "收件人"
+          },
+          "recipientAddress": {
+            "type": "string",
+            "description": "收件人地址"
+          },
+          "recipientPhone": {
+            "type": "string",
+            "description": "收件人电话"
+          },
+          "sender": {
+            "type": "string",
+            "description": "寄件人"
+          },
+          "status": {
+            "type": "string",
+            "description": "状态"
+          },
+          "weight": {
+            "type": "number",
+            "description": "重量",
+            "format": "double"
+          }
+        }
+      },
+      "用户实体类": {
+        "title": "用户实体类",
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "description": "用户地址"
+          },
+          "email": {
+            "type": "string",
+            "description": "用户邮箱"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "用户姓名"
+          },
+          "password": {
+            "type": "string",
+            "description": "用户密码"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "description": "用户电话"
+          },
+          "role": {
+            "type": "integer",
+            "description": "用户角色",
+            "format": "int32"
+          },
+          "sex": {
+            "type": "string",
+            "description": "用户性别"
+          },
+          "token": {
+            "type": "string",
+            "description": "token"
+          },
+          "userId": {
+            "type": "integer",
+            "description": "用户id",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "description": "用户名"
+          }
+        }
+      },
+      "签收订单实体类": {
+        "title": "签收订单实体类",
+        "type": "object",
+        "properties": {
+          "courierName": {
+            "type": "string",
+            "description": "快递员姓名"
+          },
+          "courierPhone": {
+            "type": "string",
+            "description": "快递员电话"
+          },
+          "date": {
+            "type": "string",
+            "description": "取件时间",
+            "format": "date-time"
+          },
+          "dispatchNumber": {
+            "type": "integer",
+            "description": "派送单号",
+            "format": "int64"
+          },
+          "id": {
+            "type": "integer",
+            "description": "ID",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "物品名称"
+          },
+          "orderDate": {
+            "type": "string",
+            "description": "运输时间",
+            "format": "date-time"
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "数量",
+            "format": "int32"
+          },
+          "recipient": {
+            "type": "string",
+            "description": "收件人姓名"
+          },
+          "recipientAddress": {
+            "type": "string",
+            "description": "收件人地址"
+          },
+          "recipientPhone": {
+            "type": "string",
+            "description": "收件人电话"
+          },
+          "senderName": {
+            "type": "string",
+            "description": "寄件人姓名"
+          },
+          "senderPhone": {
+            "type": "string",
+            "description": "寄件人电话"
+          },
+          "signTime": {
+            "type": "string",
+            "description": "签收时间",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "description": "状态"
+          },
+          "weight": {
+            "type": "number",
+            "description": "重量",
+            "format": "double"
+          }
+        }
+      },
+      "菜单实体类": {
+        "title": "菜单实体类",
+        "type": "object",
+        "properties": {
+          "children": {
+            "type": "array",
+            "description": "子菜单",
+            "items": {
+              "$ref": "#/components/schemas/菜单实体类"
+            }
+          },
+          "id": {
+            "type": "integer",
+            "description": "ID",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "名称"
+          },
+          "path": {
+            "type": "string",
+            "description": "路径"
+          },
+          "pid": {
+            "type": "integer",
+            "description": "父级ID",
+            "format": "int32"
+          },
+          "role": {
+            "type": "integer",
+            "description": "角色",
+            "format": "int32"
+          }
+        }
+      },
+      "订单实体类": {
+        "title": "订单实体类",
+        "type": "object",
+        "properties": {
+          "courierName": {
+            "type": "string",
+            "description": "快递员姓名"
+          },
+          "courierPhone": {
+            "type": "string",
+            "description": "快递员电话"
+          },
+          "date": {
+            "type": "string",
+            "description": "取件时间",
+            "format": "date-time"
+          },
+          "employeeId": {
+            "type": "integer",
+            "description": "员工ID",
+            "format": "int64"
+          },
+          "id": {
+            "type": "integer",
+            "description": "ID",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "description": "物品名称"
+          },
+          "orderDate": {
+            "type": "string",
+            "description": "订单时间",
+            "format": "date-time"
+          },
+          "quantity": {
+            "type": "integer",
+            "description": "数量",
+            "format": "int32"
+          },
+          "recipient": {
+            "type": "string",
+            "description": "收件人姓名"
+          },
+          "recipientAddress": {
+            "type": "string",
+            "description": "收件人地址"
+          },
+          "recipientPhone": {
+            "type": "string",
+            "description": "收件人电话"
+          },
+          "sender": {
+            "type": "string",
+            "description": "寄件人"
+          },
+          "senderName": {
+            "type": "string",
+            "description": "寄件人姓名"
+          },
+          "senderPhone": {
+            "type": "string",
+            "description": "寄件人电话"
+          },
+          "status": {
+            "type": "string",
+            "description": "状态"
+          },
+          "weight": {
+            "type": "number",
+            "description": "重量",
+            "format": "double"
+          }
+        }
+      }
+    }
+  }
+}
