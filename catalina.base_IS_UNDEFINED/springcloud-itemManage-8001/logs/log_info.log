@@ -1,0 +1,249 @@
+2023-06-01 18:02:56.293 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:9090/
+2023-06-01 18:03:02.634 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=springcloud-itemManage-8001, profiles=[default], label=main, version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9, state=null
+2023-06-01 18:03:02.635 [localhost,,] [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource@1300132917 {name='bootstrapProperties-configClient', properties={config.client.version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9}}, BootstrapPropertySource@1243495105 {name='bootstrapProperties-https://github.com/Demozhishen/Logistics-Management-System/springcloud-itemManage-8001.yml', properties={server.port=8001, spring.application.name=springcloud-itemManage-8001, spring.datasource.url=jdbc:mysql://localhost:3306/manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, spring.datasource.username=root, spring.datasource.password=020701czp}}]
+2023-06-01 18:03:02.654 [springcloud-itemManage-8001,,] [main] INFO  com.springcloud.UserProvider_8001 - No active profile set, falling back to 1 default profile: "default"
+2023-06-01 18:03:03.309 [springcloud-itemManage-8001,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=e5a36433-15e9-3466-bc5e-3a71315467dd
+2023-06-01 18:03:03.877 [springcloud-itemManage-8001,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-06-01 18:03:03.887 [springcloud-itemManage-8001,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-06-01 18:03:03.887 [springcloud-itemManage-8001,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-01 18:03:03.888 [springcloud-itemManage-8001,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-06-01 18:03:04.031 [springcloud-itemManage-8001,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-01 18:03:04.032 [springcloud-itemManage-8001,,] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1369 ms
+2023-06-01 18:03:08.372 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:03:08.408 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-01 18:03:09.846 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:03:10.068 [springcloud-itemManage-8001,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-01 18:03:10.109 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-01 18:03:10.111 [springcloud-itemManage-8001,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:03:10.127 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-01 18:03:10.127 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-01 18:03:10.128 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-01 18:03:10.128 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-01 18:03:10.128 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-01 18:03:10.128 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-01 18:03:10.128 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-01 18:03:10.149 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-01 18:03:10.150 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-01 18:03:10.152 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-01 18:03:10.155 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685613790155 with initial instances count: 3
+2023-06-01 18:03:10.161 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application SPRINGCLOUD-ITEMMANAGE-8001 with eureka with status UP
+2023-06-01 18:03:10.162 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685613790162, current=UP, previous=STARTING]
+2023-06-01 18:03:10.164 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001: registering service...
+2023-06-01 18:03:10.165 [springcloud-itemManage-8001,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-06-01 18:03:10.179 [springcloud-itemManage-8001,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-06-01 18:03:10.180 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8001
+2023-06-01 18:03:10.200 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001 - registration status: 204
+2023-06-01 18:03:11.606 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:03:11.649 [springcloud-itemManage-8001,,] [main] INFO  com.springcloud.UserProvider_8001 - Started UserProvider_8001 in 21.152 seconds (JVM running for 23.188)
+2023-06-01 18:08:10.132 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:11:30.844 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application SPRINGCLOUD-ITEMMANAGE-8001 with eureka with status DOWN
+2023-06-01 18:11:30.844 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685614290844, current=DOWN, previous=UP]
+2023-06-01 18:11:30.844 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001: registering service...
+2023-06-01 18:11:30.859 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001 - registration status: 204
+2023-06-01 18:11:31.177 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-01 18:11:34.184 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-06-01 18:11:34.202 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001 - deregister  status: 200
+2023-06-01 18:11:34.208 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-06-01 18:14:47.259 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:9090/
+2023-06-01 18:14:52.353 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=springcloud-itemManage-8001, profiles=[default], label=main, version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9, state=null
+2023-06-01 18:14:52.354 [localhost,,] [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource@32496853 {name='bootstrapProperties-configClient', properties={config.client.version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9}}, BootstrapPropertySource@371440613 {name='bootstrapProperties-https://github.com/Demozhishen/Logistics-Management-System/springcloud-itemManage-8001.yml', properties={server.port=8001, spring.application.name=springcloud-itemManage-8001, spring.datasource.url=jdbc:mysql://localhost:3306/manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, spring.datasource.username=root, spring.datasource.password=020701czp}}]
+2023-06-01 18:14:52.372 [springcloud-itemManage-8001,,] [main] INFO  com.springcloud.UserProvider_8001 - No active profile set, falling back to 1 default profile: "default"
+2023-06-01 18:14:53.161 [springcloud-itemManage-8001,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=129dc95b-362e-3936-9dc0-482e57634a4d
+2023-06-01 18:14:53.741 [springcloud-itemManage-8001,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2023-06-01 18:14:53.751 [springcloud-itemManage-8001,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2023-06-01 18:14:53.751 [springcloud-itemManage-8001,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-01 18:14:53.751 [springcloud-itemManage-8001,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-06-01 18:14:53.884 [springcloud-itemManage-8001,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-01 18:14:53.884 [springcloud-itemManage-8001,,] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1503 ms
+2023-06-01 18:14:59.567 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:14:59.621 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-01 18:15:01.593 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:15:03.287 [springcloud-itemManage-8001,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-01 18:15:03.362 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-01 18:15:03.369 [springcloud-itemManage-8001,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:15:03.415 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-01 18:15:03.415 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-01 18:15:03.416 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-01 18:15:03.416 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-01 18:15:03.416 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-01 18:15:03.416 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-01 18:15:03.416 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-01 18:15:03.481 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-01 18:15:03.485 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-01 18:15:03.489 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-01 18:15:03.500 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685614503498 with initial instances count: 2
+2023-06-01 18:15:03.515 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application SPRINGCLOUD-ITEMMANAGE-8001 with eureka with status UP
+2023-06-01 18:15:03.516 [springcloud-itemManage-8001,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685614503516, current=UP, previous=STARTING]
+2023-06-01 18:15:03.520 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001: registering service...
+2023-06-01 18:15:03.521 [springcloud-itemManage-8001,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2023-06-01 18:15:03.558 [springcloud-itemManage-8001,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2023-06-01 18:15:03.559 [springcloud-itemManage-8001,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8001
+2023-06-01 18:15:03.610 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001 - registration status: 204
+2023-06-01 18:15:05.785 [springcloud-itemManage-8001,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:15:05.837 [springcloud-itemManage-8001,,] [main] INFO  com.springcloud.UserProvider_8001 - Started UserProvider_8001 in 27.338 seconds (JVM running for 29.723)
+2023-06-01 18:20:03.421 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:25:03.423 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:30:03.440 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:35:03.451 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:40:03.452 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:45:03.456 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:50:03.465 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:55:03.479 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:00:03.485 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:05:03.495 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:10:03.508 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:15:03.522 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:20:03.530 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:25:03.532 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:30:03.548 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:35:03.550 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:40:03.560 [springcloud-itemManage-8001,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:43:25.014 [springcloud-itemManage-8001,,] [Thread-30] INFO  o.s.c.s.autoconfig.zipkin2.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-01 19:43:25.027 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application SPRINGCLOUD-ITEMMANAGE-8001 with eureka with status DOWN
+2023-06-01 19:43:25.027 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685619805027, current=DOWN, previous=UP]
+2023-06-01 19:43:25.029 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001: registering service...
+2023-06-01 19:43:25.039 [springcloud-itemManage-8001,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001 - registration status: 204
+2023-06-01 19:43:26.625 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-01 19:43:29.642 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-06-01 19:43:33.776 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:7001/eureka/} exception=I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2023-06-01 19:43:37.855 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:7001/eureka/}, exception=I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-ITEMMANAGE-8001/springcloud-itemManage-8001": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2023-06-01 19:43:37.867 [springcloud-itemManage-8001,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

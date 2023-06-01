@@ -4,79 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="628d68ee-6769-4549-825f-404522f59ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Mapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Sign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/Staff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-api/src/main/java/com/springcloud/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/UserProvider_8002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/common/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/common/WebMvcConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/controller/StaffController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/mapper/StaffMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/service/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/utils/TokenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-configServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-configServer/src/main/java/com/ConfigServerApplication_9090.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-configServer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-7001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-7001/src/main/java/com/springcloud/EurekaServe_7001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-eureka-7001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/java/com/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/java/com/springcloud/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/java/com/springcloud/filter/AuthorizeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/java/com/springcloud/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-knife4j/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-knife4j/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/UserProvider_8001.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/InterceptorConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/WebMvcConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/interceptor/JwtInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/controller/ManageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/controller/SignController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/ItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/SignMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/StaffMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/service/ManageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/service/ManageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/service/MenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/service/MenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="628d68ee-6769-4549-825f-404522f59ab9" name="Changes" comment="改造成springcloud">
+      <change afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-configServer/src/main/java/com/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-book-8002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-book-8002/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/UserProvider_8002.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/java/com/springcloud/UserProvider_8002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-book-8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-book-8002/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-configServer/src/main/java/com/ConfigServerApplication_9090.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-configServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-configServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway-9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway-9001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-gateway-9001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-login-8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-login-8001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/InterceptorConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-login-8001/src/main/java/com/springcloud/common/interceptor/JwtInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-login-8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-login-8001/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,13 +67,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/14485/Desktop/springcloud/springcloud-book-8002/src/main/resources",
+    "last_opened_file_path": "C:/Users/14485/Desktop/springcloud/springcloud-gateway-9001/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Issue.Navigation",
-    "spring.configuration.checksum": "db8426ea74ea969390bde59cca4a3895",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "d1e022851cce6a719582f68ba6c633a3",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -143,24 +87,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\14485\Desktop\springcloud\springcloud-gateway-9001\src\main\resources" />
+      <recent name="C:\Users\14485\Desktop\springcloud\springcloud-login-8001\src\main\resources" />
       <recent name="C:\Users\14485\Desktop\springcloud\springcloud-book-8002\src\main\resources" />
       <recent name="C:\Users\14485\Desktop\springcloud\springcloud-login-8001\src\main\java\com\springcloud\common" />
       <recent name="C:\Users\14485\Desktop\springcloud\springcloud-login-8001\src\main\java\com\springcloud" />
-      <recent name="C:\Users\14485\Desktop\springcloud\springcloud-login-8001\src\main\java\com\springcloud\service" />
-      <recent name="C:\Users\14485\Desktop\springcloud\springcloud-login-8001\src\main\java\com\springcloud\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com" />
       <recent name="com.springcloud.utils" />
       <recent name="com.springcloud.common" />
       <recent name="com.springcloud.config" />
       <recent name="com.springcloud.mapper" />
-      <recent name="com.springcloud" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication_9090">
-    <configuration name="ConfigServerApplication_9090" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.UserProvider_8002">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springcloud-configServer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConfigServerApplication_9090" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ConfigServerApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.*" />
@@ -186,6 +130,7 @@
       </method>
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="springcloud-gateway-9001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.GatewayApplication" />
       <extension name="coverage">
@@ -226,7 +171,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.ConfigServerApplication_9090" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.EurekaServe_7001" />
       <item itemvalue="Spring Boot.UserProvider_8001" />
@@ -234,11 +179,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigServerApplication_9090" />
         <item itemvalue="Spring Boot.UserProvider_8002" />
-        <item itemvalue="Spring Boot.EurekaServe_7001" />
         <item itemvalue="Spring Boot.UserProvider_8001" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.EurekaServe_7001" />
       </list>
     </recent_temporary>
   </component>
@@ -262,8 +207,17 @@
       <workItem from="1685430522686" duration="283000" />
       <workItem from="1685431497903" duration="107000" />
       <workItem from="1685432034219" duration="6489000" />
-      <workItem from="1685439353187" duration="33157000" />
+      <workItem from="1685439353187" duration="38373000" />
+      <workItem from="1685610273961" duration="6573000" />
     </task>
+    <task id="LOCAL-00001" summary="改造成springcloud">
+      <created>1685597300431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685597300431</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,6 +242,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="改造成springcloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="改造成springcloud" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

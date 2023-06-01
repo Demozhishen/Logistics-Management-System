@@ -11,8 +11,8 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 @SpringBootApplication
 @MapperScan("com.springcloud.mapper")
-
 @EnableHystrix
+@EnableEurekaClient
 public class UserProvider_8002 {
     public static void main(String[] args) {
         SpringApplication.run(UserProvider_8002.class,args);

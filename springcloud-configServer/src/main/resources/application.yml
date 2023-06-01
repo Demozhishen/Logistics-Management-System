@@ -3,18 +3,20 @@ server:
 
 spring:
   application:
-    name:  microservice-config
+    name: microservice-config
   cloud:
     config:
       server:
         git:
+          skip-ssl-validation: true
+          username: 1448527427@qq.com
+          password: 020701czp
           uri: https://github.com/Demozhishen/Logistics-Management-System
-
-
+          force-pull: true
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
   instance:
-    instance-id: spring-cloud-config-server
+    instance-id: microservice-config

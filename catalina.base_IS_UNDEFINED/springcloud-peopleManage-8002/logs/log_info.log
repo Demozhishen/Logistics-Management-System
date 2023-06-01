@@ -1,0 +1,270 @@
+2023-06-01 18:03:41.741 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:9090/
+2023-06-01 18:03:46.815 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=springcloud-peopleManage-8002, profiles=[default], label=main, version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9, state=null
+2023-06-01 18:03:46.816 [localhost,,] [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource@510368405 {name='bootstrapProperties-configClient', properties={config.client.version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9}}, BootstrapPropertySource@1299145277 {name='bootstrapProperties-https://github.com/Demozhishen/Logistics-Management-System/springcloud-peopleManage-8002.yml', properties={server.port=8002, spring.application.name=springcloud-peopleManage-8002, spring.datasource.url=jdbc:mysql://localhost:3306/manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, spring.datasource.username=root, spring.datasource.password=020701czp, mybatis-plus.mapper-locations=classpath*:mapper/*.xml}}]
+2023-06-01 18:03:46.850 [springcloud-peopleManage-8002,,] [main] INFO  com.springcloud.UserProvider_8002 - No active profile set, falling back to 1 default profile: "default"
+2023-06-01 18:03:47.917 [springcloud-peopleManage-8002,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c21cab48-384e-3ba9-bfdc-9df0f9af9967
+2023-06-01 18:03:49.193 [springcloud-peopleManage-8002,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8002 (http)
+2023-06-01 18:03:49.213 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8002"]
+2023-06-01 18:03:49.214 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-01 18:03:49.214 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-06-01 18:03:49.469 [springcloud-peopleManage-8002,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-01 18:03:49.469 [springcloud-peopleManage-8002,,] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2598 ms
+2023-06-01 18:03:54.595 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 18:03:54.610 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 18:03:57.150 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:03:57.211 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-01 18:03:59.098 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:03:59.606 [springcloud-peopleManage-8002,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-01 18:03:59.661 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-01 18:03:59.665 [springcloud-peopleManage-8002,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-01 18:03:59.690 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-01 18:03:59.733 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-01 18:03:59.736 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-01 18:03:59.740 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-01 18:03:59.746 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685613839745 with initial instances count: 3
+2023-06-01 18:03:59.755 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application SPRINGCLOUD-PEOPLEMANAGE-8002 with eureka with status UP
+2023-06-01 18:03:59.756 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685613839756, current=UP, previous=STARTING]
+2023-06-01 18:03:59.758 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002: registering service...
+2023-06-01 18:03:59.758 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8002"]
+2023-06-01 18:03:59.796 [springcloud-peopleManage-8002,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8002 (http) with context path ''
+2023-06-01 18:03:59.798 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8002
+2023-06-01 18:03:59.847 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002 - registration status: 204
+2023-06-01 18:04:01.557 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:04:01.593 [springcloud-peopleManage-8002,,] [main] INFO  com.springcloud.UserProvider_8002 - Started UserProvider_8002 in 24.652 seconds (JVM running for 26.367)
+2023-06-01 18:04:41.186 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01 18:04:41.186 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-01 18:04:41.187 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-06-01 18:04:41.290 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-01 18:04:41.389 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-01 18:08:59.708 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:13:59.721 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:14:52.413 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application SPRINGCLOUD-PEOPLEMANAGE-8002 with eureka with status DOWN
+2023-06-01 18:14:52.413 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685614492413, current=DOWN, previous=UP]
+2023-06-01 18:14:52.413 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002: registering service...
+2023-06-01 18:14:52.429 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002 - registration status: 204
+2023-06-01 18:14:52.816 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 18:14:52.820 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-01 18:14:52.827 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-01 18:14:52.828 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-01 18:14:55.830 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-06-01 18:14:55.847 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002 - deregister  status: 200
+2023-06-01 18:14:55.850 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-06-01 18:15:14.318 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:9090/
+2023-06-01 18:15:19.395 [localhost,,] [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Located environment: name=springcloud-peopleManage-8002, profiles=[default], label=main, version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9, state=null
+2023-06-01 18:15:19.396 [localhost,,] [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource@1329897103 {name='bootstrapProperties-configClient', properties={config.client.version=6fc973e08d3aa8929bc9cda3005d9d192f1ef4d9}}, BootstrapPropertySource@1091736037 {name='bootstrapProperties-https://github.com/Demozhishen/Logistics-Management-System/springcloud-peopleManage-8002.yml', properties={server.port=8002, spring.application.name=springcloud-peopleManage-8002, spring.datasource.url=jdbc:mysql://localhost:3306/manage?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true, spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver, spring.datasource.username=root, spring.datasource.password=020701czp, mybatis-plus.mapper-locations=classpath*:mapper/*.xml}}]
+2023-06-01 18:15:19.415 [springcloud-peopleManage-8002,,] [main] INFO  com.springcloud.UserProvider_8002 - No active profile set, falling back to 1 default profile: "default"
+2023-06-01 18:15:20.054 [springcloud-peopleManage-8002,,] [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=736374fa-12d1-3788-b8ba-ac35fe31e216
+2023-06-01 18:15:20.629 [springcloud-peopleManage-8002,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8002 (http)
+2023-06-01 18:15:20.639 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8002"]
+2023-06-01 18:15:20.640 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-06-01 18:15:20.640 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-06-01 18:15:20.755 [springcloud-peopleManage-8002,,] [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-06-01 18:15:20.755 [springcloud-peopleManage-8002,,] [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1328 ms
+2023-06-01 18:15:25.285 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 18:15:25.289 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 18:15:27.244 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:15:27.270 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-06-01 18:15:28.720 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:15:29.472 [springcloud-peopleManage-8002,,] [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-06-01 18:15:29.511 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-06-01 18:15:29.514 [springcloud-peopleManage-8002,,] [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:15:29.535 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-06-01 18:15:29.535 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-06-01 18:15:29.535 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-06-01 18:15:29.535 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2023-06-01 18:15:29.536 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-06-01 18:15:29.536 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-06-01 18:15:29.536 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-06-01 18:15:29.557 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2023-06-01 18:15:29.559 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-06-01 18:15:29.561 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-06-01 18:15:29.566 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1685614529566 with initial instances count: 2
+2023-06-01 18:15:29.574 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application SPRINGCLOUD-PEOPLEMANAGE-8002 with eureka with status UP
+2023-06-01 18:15:29.575 [springcloud-peopleManage-8002,,] [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685614529575, current=UP, previous=STARTING]
+2023-06-01 18:15:29.577 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002: registering service...
+2023-06-01 18:15:29.577 [springcloud-peopleManage-8002,,] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8002"]
+2023-06-01 18:15:29.598 [springcloud-peopleManage-8002,,] [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8002 (http) with context path ''
+2023-06-01 18:15:29.599 [springcloud-peopleManage-8002,,] [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8002
+2023-06-01 18:15:29.624 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002 - registration status: 204
+2023-06-01 18:15:29.681 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-01 18:15:29.681 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-06-01 18:15:29.683 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-06-01 18:15:29.828 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-06-01 18:15:29.961 [springcloud-peopleManage-8002,,] [http-nio-8002-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-06-01 18:15:31.289 [springcloud-peopleManage-8002,,] [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2023-06-01 18:15:31.331 [springcloud-peopleManage-8002,,] [main] INFO  com.springcloud.UserProvider_8002 - Started UserProvider_8002 in 23.486 seconds (JVM running for 25.995)
+2023-06-01 18:20:29.544 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:25:29.555 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:30:29.566 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:35:29.571 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:40:29.585 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:45:29.598 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:50:29.606 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 18:55:29.613 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:00:29.628 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:05:29.630 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:10:29.639 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:15:29.656 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:20:29.661 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:25:29.673 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:30:29.689 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:35:29.704 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:40:29.716 [springcloud-peopleManage-8002,,] [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-06-01 19:43:24.982 [springcloud-peopleManage-8002,,] [Thread-27] INFO  o.s.c.s.autoconfig.zipkin2.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-06-01 19:43:24.999 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application SPRINGCLOUD-PEOPLEMANAGE-8002 with eureka with status DOWN
+2023-06-01 19:43:24.999 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1685619804999, current=DOWN, previous=UP]
+2023-06-01 19:43:25.000 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002: registering service...
+2023-06-01 19:43:25.027 [springcloud-peopleManage-8002,,] [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002 - registration status: 204
+2023-06-01 19:43:25.637 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-06-01 19:43:25.643 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-06-01 19:43:25.648 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-01 19:43:26.518 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-06-01 19:43:29.534 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-06-01 19:43:33.675 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:7001/eureka/} exception=I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2023-06-01 19:43:37.768 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:7001/eureka/}, exception=I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:7001/eureka/apps/SPRINGCLOUD-PEOPLEMANAGE-8002/springcloud-peopleManage-8002": Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:791)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:717)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:608)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:7001 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+	at java.net.Socket.connect(Socket.java:606)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2023-06-01 19:43:37.785 [springcloud-peopleManage-8002,,] [SpringApplicationShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
