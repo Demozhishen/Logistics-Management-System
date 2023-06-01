@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: gateway-demo
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: UserController
+          uri: http://localhost:8002
+          predicates: Path=/user/**
+        - id: StaffController
+          uri: http://localhost:8002
+          predicates: Path=/staff/**
+        - id: LoginController
+          uri: http://localhost:8002
+          predicates: Path=/login
+        - id: ItemController
+          uri: http://localhost:8001
+          predicates: Path=/item/**
+        - id:  OrderController
+          uri: http://localhost:8001
+          predicates: Path=/order/**
+        - id: SignController
+          uri: http://localhost:8001
+          predicates: Path=/sign/**
+        - id: ManageController
+          uri: http://localhost:8001
+          predicates: Path=/manage/**
+  web:
+    resources:
+      add-mappings: true
+
+
+
+
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+      fetch-registry: true
+
