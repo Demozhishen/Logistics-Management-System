@@ -20,12 +20,6 @@ spring:
     password: 020701czp
 
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:7001/eureka/
-  instance:
-    instance-id: springcloud-itemManage-8001
 
 
 
