@@ -1,6 +1,7 @@
 # Logistics-Management-System
 物流管理系统代码仓库  
 小组成员：  
+工作占比：成居宝 95%  
 20301127 成居宝  
 20301178 徐飞扬  
 springmvc分支为第一次作业，采用了vue1.0作为前端   
